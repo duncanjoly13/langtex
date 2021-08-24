@@ -1,0 +1,290 @@
+% started 8/23/2021 by duncanjoly13
+\documentclass[landscape]{standalone}
+\usepackage{textcase}
+\usepackage[edges]{forest}
+% forestset credits: Marmot on stackexchange
+\forestset{list/.style={l sep=2pt,l=0,
+                for descendants={no edge,l sep=2pt,l=0}},
+    lfamily/.style={content=\MakeTextUppercase{##1}},
+    dead/.style={fill={red!50}},
+    living/.style={fill={green!50}},
+    unclear/.style={fill={blue!50}}
+}
+\begin{document}
+\begin{forest}forked edges,for tree={draw,align=center,minimum width=.8in,inner sep=1pt,font=\sffamily}
+[Niger-Congo,lfamily
+	[Atlantic-Congo,lfamily
+		[Atlantic,lfamily
+			[Northern,lfamily
+				[Senegambian,lfamily
+					[Bak,lfamily
+						[Bak proper,lfamily
+							[Balanta,unclear]
+							[Jola,lfamily
+								[Bayot,living]
+								[Jola Proper,lfamily
+									[Kwatay,list,living
+									[Karon,living
+									[Mlomp,living]]]
+									[Central Jola,lfamily
+										[Jola-Fonyi,list,living
+										[Bandial,living
+										[Gusilay,living
+										[Jola-Felupe,living
+										[Kasa,living]]]]]
+									]
+								]
+								[Papel,lfamily
+									[Mankanya,list,living
+									[Mandjak,living
+									[Papel,living]]]
+								]
+							]
+						]	
+					]
+					[Bijago,living]
+					[Fula-Wolof,lfamily
+						[Fula-Serer,lfamily
+							[Fula,list,living
+							[Serer,living]]
+						]
+						[Tenda-Jaad,lfamily
+							[Tenda,lfamily
+								[Basari/Oniyan,list,living
+								[Bedik,living
+								[Wamey/Konyagi,living
+								[Bapeng,dead]]]]
+							]
+							[Jaad,lfamily
+								[Biafada,list,living
+								[Badyara/Pajade,living]]
+							]
+						]
+						[Cangin,lfamily
+							[Safen,living]
+							[Lehar-Noon,lfamily
+								[Lehar,list,living
+								[Noon,living]]
+							]
+							[Palor-Ndut,lfamily
+								[Palor,list,living
+								[Ndut,living]]
+							]
+						]
+						[Wolof,living]
+						[Nyun,lfamily
+							[Kasanga,list,unclear
+							[Kobiana/Buy,living
+							[Banyum,living
+							[Baïnounk Gubëeher,living]]]]
+						]
+						[Nalu/Rio Nunez,lfamily
+							[Mboteni/Baga Pokur,list,unclear
+							[Mbulungish,living
+							[Nalu,living]]]
+						]
+					]
+				]
+			]
+			[Bijago,living]
+			[Southern,lfamily
+				[Sua,list,living
+				[Limba,living]]
+				[Mel,lfamily
+					[Temne,lfamily
+						[Temne,living]
+						[Baga,lfamily
+							[Landoma,list,living
+							[Baga,unclear]]
+						]
+					]
+					[Bullom-Kissi,lfamily
+						[Bullom,lfamily
+							[Bom/Krim,list,unclear
+							[Bullom So,living
+							[Sherbro,living]]]
+						]
+						[Kissi,living]
+					]
+				]
+			]
+			[Gola,living]
+		]
+		[Volta-Congo,lfamily
+			[North Volta,lfamily
+				[Kru,lfamily
+					[Siamou,list,living
+					[Kuwaa,living]]
+					[Aizi,lfamily
+						[Lélé/Tiagba,list,living
+						[Mobu,living]]
+					]
+					[Kru proper,lfamily
+						[Eastern Kru,lfamily
+							[Bakwe,lfamily
+								[Bakwe,list,living
+								[Wane,living]]
+							]
+							[Bété/Diula,lfamily
+								[Western,lfamily
+									[Bété of Gagnoa,list,unclear
+									[Kuya,living]]
+								]
+								[Eastern,lfamily
+									[Bété of Guiberoua,list,unclear
+									[Bété of Daloa,unclear
+									[Godié,living]]]
+								]
+							]
+							[Dida,list,living
+							[Kodia,living]]
+						]
+						[Western Kru,lfamily
+							[Bassa,lfamily
+								[Bassa,list,living
+								[Dewoin,living
+								[Gbii,living]]]
+							]
+							[Grebo,lfamily
+								[Grebo,list,living
+								[Jabo,unclear
+								[Glio-Oubi,living]]]
+								[Krumen,lfamily
+									[Tepo,list,living
+									[Pye,living
+									[Plapo,living]]]
+								]
+							]
+							[Klao,lfamily
+								[Klao/Kru,list,living
+								[Tajausohn,living]]
+							]
+							[Wee,lfamily
+								[Guere,lfamily
+									[Daho-Doo,lfamily
+										[Daho,list,living
+										[Doo,living]]
+									]
+									[Glaro-Twabo,lfamily
+										[Glaro,list,living
+										[Twabo,living]]
+									]
+									[Sapo,list,living
+									[Guere/Wè,living
+									[Krahn,living]]]
+								]
+								[Nyabwa,list,living
+								[Konobo,living
+								[Wobé,living]]]
+							]
+						]
+					]
+				]
+				[Adamawa-Ubangi,lfamily
+					[Adamawa,lfamily
+						[Leko-Nimbari/Chamba-Mumuye,lfamily
+							[Duru,lfamily
+								[Duli,list,dead
+								[Peere/Kutin,living
+								[Longto/Voko,living]]]
+								[Dii,lfamily
+									[Duupa,list,living
+									[Dugun,living
+									[Dii,living]]]
+								]
+								[Vere-Dowayo,lfamily
+									[Dowayo,list,living
+									[Koma,living
+									[Vere,living]]]
+								]
+							]
+							[Leko,lfamily
+								[Nyong,list,living
+								[Pere/Perema/Wom,living
+								[Samba  Leko,living
+								[Kobila,living]]]]
+							]
+							[Mumuye-Yendang,lfamily
+								[Mumuye,lfamily
+									[Mumuye,list,living
+									[Rang,unclear
+									[Pangseng,unclear]]]
+								]
+								[Yendang/Maya,lfamily
+									[Bali,list,living
+									[Kpasham/Nyesam,living
+									[Waka,unclear
+									[Yendang,living
+									[Yoti,living
+									[Teme,living
+									[Gengle,unclear
+									[Kugama/Wam,living
+									[Kumba/Sate/Yofo,living]]]]]]]]]
+								]
+							]
+							[Nimbari,dead]
+						]
+						[Mbum-Day,lfamily
+							[Bua,lfamily
+								[Bua,list,living
+								[Fanian/Mana/Kobe,living
+								[Niellim/Lua,living
+								[Tunia,living
+								[Noy/Loo,unclear
+								[Koke,living
+								[Bolgo,living]]]]]]]
+								[Gula,lfamily
+									[Gula Iro/Kulaal,list,living
+									[Zan Gula,living
+									[Bon Gula,living]]]
+								]
+							]
+							[Kim,lfamily
+								[Kim,list,living
+								[Besme,living
+								[Goundo,living]]]
+							]
+							[Mbum,lfamily
+								[Southern Mbum,lfamily
+									[Mbum/Gbete,list,living
+									[Mbere,living]]
+								]
+								[Central Mbum,lfamily
+									[Karang,lfamily
+										[Karang/Lakka,list,living
+										[Nzakambay/Njak Mbai,living
+										[Pana,living
+										[Ngumi,unclear
+										[Kare,living]]]]]
+									]
+									[Koh,lfamily
+										[Kuo/Koh,list,living
+										[Sakpu,unclear]]
+									]
+								]
+								[Northern Mbum,lfamily
+									[Dama-Galke,lfamily
+										[Dama/Mono,list,unclear
+										[Ndai/Galki/Pormi,dead
+										[Kali,living]]]
+									]
+									[Tupuri-Mambai,lfamily
+										[Mangbai/Mambai,list,living
+										[Mundang,living
+										[Tupuri,living]]]
+									]
+								]
+								[La'bi,list,living
+								[To,living]]
+							]
+							[Day,living]
+						]
+						%HERE
+					]
+				]
+			]
+		]
+	]
+]
+\end{forest}
+\end{document}
