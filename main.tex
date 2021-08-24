@@ -5,281 +5,530 @@
 % forestset credits: Marmot on stackexchange
 \forestset{list/.style={l sep=2pt,l=0,
                 for descendants={no edge,l sep=2pt,l=0}},
-    lfamily/.style={content=\MakeTextUppercase{##1}},
-    dead/.style={fill={red!50}},
-    living/.style={fill={green!50}},
-    unclear/.style={fill={blue!50}}
+    f/.style={content=\MakeTextUppercase{##1}},
+    d/.style={fill={red!50}},
+    l/.style={fill={green!50}},
+    u/.style={fill={blue!50}}
 }
 \begin{document}
 \begin{forest}forked edges,for tree={draw,align=center,minimum width=.8in,inner sep=1pt,font=\sffamily}
-[Niger-Congo,lfamily
-	[Atlantic-Congo,lfamily
-		[Atlantic,lfamily
-			[Northern,lfamily
-				[Senegambian,lfamily
-					[Bak,lfamily
-						[Bak proper,lfamily
-							[Balanta,unclear]
-							[Jola,lfamily
-								[Bayot,living]
-								[Jola Proper,lfamily
-									[Kwatay,list,living
-									[Karon,living
-									[Mlomp,living]]]
-									[Central Jola,lfamily
-										[Jola-Fonyi,list,living
-										[Bandial,living
-										[Gusilay,living
-										[Jola-Felupe,living
-										[Kasa,living]]]]]
+[Niger-Congo,f
+	[Atlantic-Congo,f
+		[Atlantic,f
+			[Northern,f
+				[Senegambian,f
+					[Bak,f
+						[Bak proper,f
+							[Balanta,u]
+							[Jola,f
+								[Bayot,l]
+								[Jola Proper,f
+									[Kwatay,list,l
+									[Karon,l
+									[Mlomp,l]]]
+									[Central Jola,f
+										[Jola-Fonyi,list,l
+										[Bandial,l
+										[Gusilay,l
+										[Jola-Felupe,l
+										[Kasa,l]]]]]
 									]
 								]
-								[Papel,lfamily
-									[Mankanya,list,living
-									[Mandjak,living
-									[Papel,living]]]
+								[Papel,f
+									[Mankanya,list,l
+									[Mandjak,l
+									[Papel,l]]]
 								]
 							]
 						]	
 					]
-					[Bijago,living]
-					[Fula-Wolof,lfamily
-						[Fula-Serer,lfamily
-							[Fula,list,living
-							[Serer,living]]
+					[Bijago,l]
+					[Fula-Wolof,f
+						[Fula-Serer,f
+							[Fula,list,l
+							[Serer,l]]
 						]
-						[Tenda-Jaad,lfamily
-							[Tenda,lfamily
-								[Basari/Oniyan,list,living
-								[Bedik,living
-								[Wamey/Konyagi,living
-								[Bapeng,dead]]]]
+						[Tenda-Jaad,f
+							[Tenda,f
+								[Basari/Oniyan,list,l
+								[Bedik,l
+								[Wamey/Konyagi,l
+								[Bapeng,d]]]]
 							]
-							[Jaad,lfamily
-								[Biafada,list,living
-								[Badyara/Pajade,living]]
-							]
-						]
-						[Cangin,lfamily
-							[Safen,living]
-							[Lehar-Noon,lfamily
-								[Lehar,list,living
-								[Noon,living]]
-							]
-							[Palor-Ndut,lfamily
-								[Palor,list,living
-								[Ndut,living]]
+							[Jaad,f
+								[Biafada,list,l
+								[Badyara/Pajade,l]]
 							]
 						]
-						[Wolof,living]
-						[Nyun,lfamily
-							[Kasanga,list,unclear
-							[Kobiana/Buy,living
-							[Banyum,living
-							[Baïnounk Gubëeher,living]]]]
+						[Cangin,f
+							[Safen,l]
+							[Lehar-Noon,f
+								[Lehar,list,l
+								[Noon,l]]
+							]
+							[Palor-Ndut,f
+								[Palor,list,l
+								[Ndut,l]]
+							]
 						]
-						[Nalu/Rio Nunez,lfamily
-							[Mboteni/Baga Pokur,list,unclear
-							[Mbulungish,living
-							[Nalu,living]]]
+						[Wolof,l]
+						[Nyun,f
+							[Kasanga,list,u
+							[Kobiana/Buy,l
+							[Banyum,l
+							[Baïnounk Gubëeher,l]]]]
+						]
+						[Nalu/Rio Nunez,f
+							[Mboteni/Baga Pokur,list,u
+							[Mbulungish,l
+							[Nalu,l]]]
 						]
 					]
 				]
 			]
-			[Bijago,living]
-			[Southern,lfamily
-				[Sua,list,living
-				[Limba,living]]
-				[Mel,lfamily
-					[Temne,lfamily
-						[Temne,living]
-						[Baga,lfamily
-							[Landoma,list,living
-							[Baga,unclear]]
+			[Bijago,l]
+			[Southern,f
+				[Sua,list,l
+				[Limba,l]]
+				[Mel,f
+					[Temne,f
+						[Temne,l]
+						[Baga,f
+							[Landoma,list,l
+							[Baga,u]]
 						]
 					]
-					[Bullom-Kissi,lfamily
-						[Bullom,lfamily
-							[Bom/Krim,list,unclear
-							[Bullom So,living
-							[Sherbro,living]]]
+					[Bullom-Kissi,f
+						[Bullom,f
+							[Bom/Krim,list,u
+							[Bullom So,l
+							[Sherbro,l]]]
 						]
-						[Kissi,living]
+						[Kissi,l]
 					]
 				]
 			]
-			[Gola,living]
+			[Gola,l]
 		]
-		[Volta-Congo,lfamily
-			[North Volta,lfamily
-				[Kru,lfamily
-					[Siamou,list,living
-					[Kuwaa,living]]
-					[Aizi,lfamily
-						[Lélé/Tiagba,list,living
-						[Mobu,living]]
+		[Volta-Congo,f
+			[North Volta/Savannas,f
+				[Kru,f
+					[Siamou,list,l
+					[Kuwaa,l]]
+					[Aizi,f
+						[Lélé/Tiagba,list,l
+						[Mobu,l]]
 					]
-					[Kru proper,lfamily
-						[Eastern Kru,lfamily
-							[Bakwe,lfamily
-								[Bakwe,list,living
-								[Wane,living]]
+					[Kru proper,f
+						[Eastern Kru,f
+							[Bakwe,f
+								[Bakwe,list,l
+								[Wane,l]]
 							]
-							[Bété/Diula,lfamily
-								[Western,lfamily
-									[Bété of Gagnoa,list,unclear
-									[Kuya,living]]
+							[Bété/Diula,f
+								[Western,f
+									[Bété of Gagnoa,list,u
+									[Kuya,l]]
 								]
-								[Eastern,lfamily
-									[Bété of Guiberoua,list,unclear
-									[Bété of Daloa,unclear
-									[Godié,living]]]
+								[Eastern,f
+									[Bété of Guiberoua,list,u
+									[Bété of Daloa,u
+									[Godié,l]]]
 								]
 							]
-							[Dida,list,living
-							[Kodia,living]]
+							[Dida,list,l
+							[Kodia,l]]
 						]
-						[Western Kru,lfamily
-							[Bassa,lfamily
-								[Bassa,list,living
-								[Dewoin,living
-								[Gbii,living]]]
+						[Western Kru,f
+							[Bassa,f
+								[Bassa,list,l
+								[Dewoin,l
+								[Gbii,l]]]
 							]
-							[Grebo,lfamily
-								[Grebo,list,living
-								[Jabo,unclear
-								[Glio-Oubi,living]]]
-								[Krumen,lfamily
-									[Tepo,list,living
-									[Pye,living
-									[Plapo,living]]]
+							[Grebo,f
+								[Grebo,list,l
+								[Jabo,u
+								[Glio-Oubi,l]]]
+								[Krumen,f
+									[Tepo,list,l
+									[Pye,l
+									[Plapo,l]]]
 								]
 							]
-							[Klao,lfamily
-								[Klao/Kru,list,living
-								[Tajausohn,living]]
+							[Klao,f
+								[Klao/Kru,list,l
+								[Tajausohn,l]]
 							]
-							[Wee,lfamily
-								[Guere,lfamily
-									[Daho-Doo,lfamily
-										[Daho,list,living
-										[Doo,living]]
+							[Wee,f
+								[Guere,f
+									[Daho-Doo,f
+										[Daho,list,l
+										[Doo,l]]
 									]
-									[Glaro-Twabo,lfamily
-										[Glaro,list,living
-										[Twabo,living]]
+									[Glaro-Twabo,f
+										[Glaro,list,l
+										[Twabo,l]]
 									]
-									[Sapo,list,living
-									[Guere/Wè,living
-									[Krahn,living]]]
+									[Sapo,list,l
+									[Guere/Wè,l
+									[Krahn,l]]]
 								]
-								[Nyabwa,list,living
-								[Konobo,living
-								[Wobé,living]]]
+								[Nyabwa,list,l
+								[Konobo,l
+								[Wobé,l]]]
 							]
 						]
 					]
 				]
-				[Adamawa-Ubangi,lfamily
-					[Adamawa,lfamily
-						[Leko-Nimbari/Chamba-Mumuye,lfamily
-							[Duru,lfamily
-								[Duli,list,dead
-								[Peere/Kutin,living
-								[Longto/Voko,living]]]
-								[Dii,lfamily
-									[Duupa,list,living
-									[Dugun,living
-									[Dii,living]]]
+				[Adamawa-Ubangi,f
+					[Adamawa,f
+						[Leko-Nimbari/Chamba-Mumuye,f
+							[Duru,f
+								[Duli,list,d
+								[Peere/Kutin,l
+								[Longto/Voko,l]]]
+								[Dii,f
+									[Duupa,list,l
+									[Dugun,l
+									[Dii,l]]]
 								]
-								[Vere-Dowayo,lfamily
-									[Dowayo,list,living
-									[Koma,living
-									[Vere,living]]]
-								]
-							]
-							[Leko,lfamily
-								[Nyong,list,living
-								[Pere/Perema/Wom,living
-								[Samba  Leko,living
-								[Kobila,living]]]]
-							]
-							[Mumuye-Yendang,lfamily
-								[Mumuye,lfamily
-									[Mumuye,list,living
-									[Rang,unclear
-									[Pangseng,unclear]]]
-								]
-								[Yendang/Maya,lfamily
-									[Bali,list,living
-									[Kpasham/Nyesam,living
-									[Waka,unclear
-									[Yendang,living
-									[Yoti,living
-									[Teme,living
-									[Gengle,unclear
-									[Kugama/Wam,living
-									[Kumba/Sate/Yofo,living]]]]]]]]]
+								[Vere-Dowayo,f
+									[Dowayo,list,l
+									[Koma,l
+									[Vere,l]]]
 								]
 							]
-							[Nimbari,dead]
+							[Leko,f
+								[Nyong,list,l
+								[Pere/Perema/Wom,l
+								[Samba  Leko,l
+								[Kobila,l]]]]
+							]
+							[Mumuye-Yendang,f
+								[Mumuye,f
+									[Mumuye,list,l
+									[Rang,u
+									[Pangseng,u]]]
+								]
+								[Yendang/Maya,f
+									[Bali,list,l
+									[Kpasham/Nyesam,l
+									[Waka,u
+									[Yendang,l
+									[Yoti,l
+									[Teme,l
+									[Gengle,u
+									[Kugama/Wam,l
+									[Kumba/Sate/Yofo,l]]]]]]]]]
+								]
+							]
+							[Nimbari,d]
 						]
-						[Mbum-Day,lfamily
-							[Bua,lfamily
-								[Bua,list,living
-								[Fanian/Mana/Kobe,living
-								[Niellim/Lua,living
-								[Tunia,living
-								[Noy/Loo,unclear
-								[Koke,living
-								[Bolgo,living]]]]]]]
-								[Gula,lfamily
-									[Gula Iro/Kulaal,list,living
-									[Zan Gula,living
-									[Bon Gula,living]]]
+						[Mbum-Day,f
+							[Bua,f
+								[Bua,list,l
+								[Fanian/Mana/Kobe,l
+								[Niellim/Lua,l
+								[Tunia,l
+								[Noy/Loo,u
+								[Koke,l
+								[Bolgo,l]]]]]]]
+								[Gula,f
+									[Gula Iro/Kulaal,list,l
+									[Zan Gula,l
+									[Bon Gula,l]]]
 								]
 							]
-							[Kim,lfamily
-								[Kim,list,living
-								[Besme,living
-								[Goundo,living]]]
+							[Kim,f
+								[Kim,list,l
+								[Besme,l
+								[Goundo,l]]]
 							]
-							[Mbum,lfamily
-								[Southern Mbum,lfamily
-									[Mbum/Gbete,list,living
-									[Mbere,living]]
+							[Mbum,f
+								[Southern Mbum,f
+									[Mbum/Gbete,list,l
+									[Mbere,l]]
 								]
-								[Central Mbum,lfamily
-									[Karang,lfamily
-										[Karang/Lakka,list,living
-										[Nzakambay/Njak Mbai,living
-										[Pana,living
-										[Ngumi,unclear
-										[Kare,living]]]]]
+								[Central Mbum,f
+									[Karang,f
+										[Karang/Lakka,list,l
+										[Nzakambay/Njak Mbai,l
+										[Pana,l
+										[Ngumi,u
+										[Kare,l]]]]]
 									]
-									[Koh,lfamily
-										[Kuo/Koh,list,living
-										[Sakpu,unclear]]
-									]
-								]
-								[Northern Mbum,lfamily
-									[Dama-Galke,lfamily
-										[Dama/Mono,list,unclear
-										[Ndai/Galki/Pormi,dead
-										[Kali,living]]]
-									]
-									[Tupuri-Mambai,lfamily
-										[Mangbai/Mambai,list,living
-										[Mundang,living
-										[Tupuri,living]]]
+									[Koh,f
+										[Kuo/Koh,list,l
+										[Sakpu,u]]
 									]
 								]
-								[La'bi,list,living
-								[To,living]]
+								[Northern Mbum,f
+									[Dama-Galke,f
+										[Dama/Mono,list,u
+										[Ndai/Galki/Pormi,d
+										[Kali,l]]]
+									]
+									[Tupuri-Mambai,f
+										[Mangbai/Mambai,list,l
+										[Mundang,l
+										[Tupuri,l]]]
+									]
+								]
+								[La'bi,list,l
+								[To,l]]
 							]
-							[Day,living]
+							[Day,l]
 						]
-						%HERE
+						[Bambukic/Trans-Benue,f
+							[Bikwin-Jen,f
+								[Jen,f
+									[Dza/Jen,list,l
+									[Mingang Doso,l
+									[Tha,l
+									[Joole,l]]]]
+								]
+								[Bikwin,f
+									[Burak,l,list
+									[Loo,l
+									[Maghdi,l
+									[Mak,l
+									[Moo/Gomu,l
+									[Leelau/Munga,l
+									[Kyak/Bambuka,l]]]]]]]
+								]
+								[Longuda,l]
+								[Yungur,f
+									[Kaan/Libo,list,l
+									[Mboi,l]]
+									[Yungur-Roba,f
+										[Lala-Roba/Gworam,list,l
+										[Voro,u
+										[Bena,l]]]
+									]
+								]
+							]
+						]
+					]
+					[Ubangian,f
+						[Gbaya,f
+							[Southern,f
+								[Bangando/Ngombe,list,l
+								[Niyanda/Buli,l]]
+							]
+							[Western,f
+								[Toongo,list,u
+								[Lai/Kara,l
+								[Bokoto,l
+								[Bozom,l
+								[Gbeya,l]]]]]
+							]
+							[Eastern,f
+								[Mbodomo-Bofi,f
+									[Mbodomo,list,l
+									[Bofi,l]]
+								]
+								[Gbanu-Ngbaka,f
+									[Manza,f
+										[Ali/Ngbaka-Manza,list,l
+										[Manza,l]]
+									]
+									[Ngbaka,list,l
+									[Gbanu,l]]
+								]
+							]
+						]
+						[Zande,f
+							[Barambo-Pambia,f
+								[Barambu,list,l
+								[Pambia,l
+								[Ngala,l]]]
+							]
+						]
+						[Banda,f
+							[Central,f
+								[Yakpa,list,u
+								[Gubu,u
+								[Kpagua,u
+								[Ngundu,u
+								[Bongo,u
+								[Wasa,u
+								[Dukpu,u
+								[Linda,u
+								[Joto,u
+								[Ndokpa,u
+								[Ngapo,u
+								[Southern Gbaga,u
+								[Nbiyi,u
+								[Bereya,u
+								[Ngola,u
+								[Ndi,u
+								[Ka,u
+								[Gbambiya,u
+								[Hai,u
+								[Galabo,u
+								[Vidiri,u
+								[Banda-Banda,u
+								[Buru,u
+								[Wundu,u
+								[Govoro,u
+								[Banda-Ndele,u
+								[Banda-Kpaya,u
+								[Ngao,u
+								[Ngbala,u
+								[Tangbago,u
+								[Junguru,u
+								[Mbere,u
+								[Buka,u
+								[Moruba,u
+								[Sabanga,u
+								[Wada,u
+								[Vara,u
+								[Togbo,u
+								[Yangere,l]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]
+							]
+							[Peripheral,f
+								[West Central,f
+									[Dakpa,list,u
+									[Gbi,u
+									[Northern Gbaga,u
+									[Wojo]]]]
+								]
+								[South Central,f
+									[Langabasi,list,u
+									[Ngbugu,u
+									[Langba,u]]]
+								]
+								[Central,f
+									[Mbanza,list,u
+									[Mbanja,u]]
+								]
+								[Southwestern,f
+									[Ngbundu,list,u
+									[Kpala,u]]
+								]
+							]
+						]
+						[Ngbandi,f
+							[Sango,list,l
+							[Yakoma,u
+							[Gbayi/Kpatiri,l]]]
+						]
+						[Sere-Mba,f
+							[Sere,f
+								[Feroge-Mangaya,f
+									[Feroge/Kaligi,list,u
+									[Mangaya/Buga,u]]
+								]
+								[Indri-Togoyo,f
+									[Indri,list,u
+									[Togoyo,d]]
+								]
+								[Sere-Bviri,f
+									[Bai-Viri,f
+										[Bai,list,u
+										[Belanda Viri,u]]
+									]
+									[Ndogo-Sere,f
+										[Ndogo,list,l
+										[Sere,u
+										[Tagbu,l]]]
+									]
+								]
+							]
+							[Ngbaka-Mba,f
+								[Ngbaka,f
+									[Eastern,f
+										[Mayogo-Bangba,f
+											[Bangba,list,u
+											[Mayogo,u]]
+										]
+										[Mündü,u]
+									]
+									[Western,f
+										[Baka,f
+											[Baka,list,u
+											[Gundi,u
+											[Ganzi,u
+											[Massa,u]]]]
+										]
+										[River Western,f
+											[Mbaka/Bwaka,list,l
+											[Gbanzili,u]]
+											[Monzombo,f
+												[Monzombo,list,u
+												[Kpala,u
+												[Yango,u]]]
+											]
+										]
+									]
+								]
+								[Mba,f
+									[A-Ma-Lo/Ma,u]
+									[Ndunga-Mba-'Dongo,f
+										[`Dongo-Ko,l]
+										[Ndunga-Mba,f
+											[Ndunge-le,list,u
+											[Mba-ne,l]]
+										]
+									]
+								]
+							]
+						]
+					]
+				]
+				%[Nyingwom/Kam,list,l
+				%[Kwah/Baa,l]]
+				[Gur,f
+					[Central Gur/Mabia,f
+						[Northern Gur,f
+							[Oti-Volta,f
+								[Buli-Koma,f
+									[Buli,list,l
+									[Konni,l]]
+								]
+								[Eastern/Somba,f
+									[Biali/Berba,list,u
+									[Mbelime.Niende,l
+									[Tammari,l
+									[Waama,l]]]]
+								]
+								[Western/Mole-Dagbani,f
+									[Nootre,l]
+									[Northwest,f
+										[Moore/Mossi,list,l
+										[Frafra,l
+										[Safaliba,l
+										[Wali,l
+										[Dagaare,f
+										[Birifor,l]]]]]]
+									]
+									[Southeast,f
+										[Dagbani,list,l
+										[Hanga,l
+										[Kamara,l
+										[Kusasi,l
+										[Nabit,l
+										[Talni,l
+										[Mampruli,l
+										[Kantosi,l]]]]]]]]
+									]
+								]
+								[Gurma,f
+									[Ngangam,list,l
+									[Gourmanchema,l
+									[Moba,l
+									[Ntcham/Basari,l
+									[Nateni,l
+									[Miyobe,l
+									[Konkomba,l]]]]]]]
+								]
+								[Yom-Nawdm,f
+									[Nawdm,list,l
+									[Yom,l]]
+								]
+							]
+							% HERE
+						]
 					]
 				]
 			]
