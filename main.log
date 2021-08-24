@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.23)  23 AUG 2021 23:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.23)  24 AUG 2021 15:51
 entering extended mode
 **./main.tex
 (main.tex
@@ -621,24 +621,24 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 538.
+(Font)              <7> on input line 809.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 538.
+(Font)              <5> on input line 809.
  [1
 
 {C:/Users/dunca/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 (main.aux) ) 
 Here is how much of TeX's memory you used:
- 65894 strings out of 478868
- 1352428 string characters out of 2848809
- 1910132 words of memory out of 3000000
- 83525 multiletter control sequences out of 15000+600000
+ 87584 strings out of 478868
+ 1771978 string characters out of 2848809
+ 2650539 words of memory out of 3000000
+ 105215 multiletter control sequences out of 15000+600000
  403735 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 557i,11n,424p,1620b,31924s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 564i,11n,433p,1620b,47747s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/dunca/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmss10.pfb>
-Output written on main.pdf (1 page, 38923 bytes).
+Output written on main.pdf (1 page, 54957 bytes).
 PDF statistics:
  14 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

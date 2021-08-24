@@ -3,8 +3,8 @@
 \usepackage{textcase}
 \usepackage[edges]{forest}
 % forestset credits: Marmot on stackexchange
-\forestset{list/.style={l sep=2pt,l=0,
-                for descendants={no edge,l sep=2pt,l=0}},
+\forestset{list/.style={l sep=0pt,l=0,
+                for descendants={l sep=0pt,l=0}},
     f/.style={content=\MakeTextUppercase{##1}},
     d/.style={fill={red!50}},
     l/.style={fill={green!50}},
@@ -182,7 +182,7 @@
 				]
 				[Adamawa-Ubangi,f
 					[Adamawa,f
-						[Leko-Nimbari/Chamba-Mumuye,f
+						[Chamba-Mumuye,f
 							[Duru,f
 								[Duli,list,d
 								[Peere/Kutin,l
@@ -476,8 +476,6 @@
 						]
 					]
 				]
-				%[Nyingwom/Kam,list,l
-				%[Kwah/Baa,l]]
 				[Gur,f
 					[Central Gur/Mabia,f
 						[Northern Gur,f
@@ -527,13 +525,286 @@
 									[Yom,l]]
 								]
 							]
-							% HERE
+							[Bwa,f
+								[Bwamu,list,l
+								[Laa Laa Bwamu/asKadenba,l
+								[Cwi Bwamu,l
+								[Bomu,u]]]]
+							]
+							[Koromfe,l]
 						]
+						[Southern Gur,f
+							[Grusi/East Mabia,f
+								[Eastern,f
+									[Lukpa,list,l
+									[Kabiye,l
+									[Tem,u
+									[Lama,l
+									[Delo,l
+									[Bago-Kusuntu,l
+									[Chala,l]]]]]]]
+								]
+								[Northern,f
+									[Lyele,list,l
+									[Nuni,l
+									[Kalamse/Samoma,u
+									[Pana,u
+									[Kasena/Kasem,l]]]]]
+								]
+								[Western,f
+									[Winye/Kolsi,list,u
+									[Deg,l
+									[Puguli/Phuie,l
+									[Paasaa/Sisaalal,l
+									[Chakali,l
+									[Siti,u
+									[Tamprusi/Tampulma,l
+									[Vagla,l]]]]]]]]
+								]
+							]
+							[Kirma-Tyurama,f
+								[Cerma,list,l
+								[Turka,l]]
+							]
+							[Lobi-Dyan,f
+								[Lobi/Miwa,list,l
+								[Dyan,u]]
+							]
+							[Doghose-Gan,f
+								[Dogose,list,u
+								[Kaansa,u
+								[Khisa,u]]]
+							]
+							[Dogoso-Khe,f
+								[Dogose,list,u
+								[Khe,u]]
+							]
+						]
+					]
+					[Waja-Kam,f
+						[Tula-Waja,f
+							[Tula,f
+								[Tula,list,u
+								[Yiri,u]]
+								[Kutule,f
+									[Wange,list,u
+									[Baule,u]]
+								]
+							]
+							[Dadiya,list,u
+							[Bangwinji,u
+							[Yebu/Awak,u
+							[Kamo/Ma,u
+							[Dikaka/Cham,u
+							[Tso,u
+							[Waja,u]]]]]]]
+						]
+						[Nyingwom/Kam,u]
+					]
+				]
+				[Senufo,f
+					[Northern Senufo,f
+						[Suppire-Manara,f
+							[Mamara,list,l
+							[Nanerige,u
+							[Suppire,l
+							[Sucite,l
+							[Shempire,l]]]]]
+						]
+					]
+					[Central Senufo,f
+						[Karaboro,f
+							[Kar,list,u
+							[Syer-Tenyer,u]]
+						]
+						[Senari,f
+							[Cebaara/Tyebaala,list,l
+							[Senara,l
+							[Nyarafolo,l]]]
+						]
+						[Kpalaga,u]
+					]
+					[Southern Senufo,f
+						[Tagwana-Djimini,f
+							[Djimini,list,u
+							[Tagwana,l]]
+						]
+						[Nagaanra,l]
 					]
 				]
 			]
-		]
-	]
-]
+			[South-Volta,f
+				[Kwa,f
+					[Potou-Tano,f
+						[Potou,f
+							[Ebrie,list,u
+							[Mbato,u]]
+						]
+						[Tano,f
+							[Krobu,u]
+							[West,f
+								[Abure,list,u
+								[Eotile/Beti,u]]
+							]
+							[Central/Akan,f
+								[Akan,l]
+								[Bia,f
+									[North,f
+										[Anyin,list,l
+										[Baoule,l
+										[Chakosi/Anufo,l
+										[Sefwi,l]]]]
+									]
+									[South,f
+										[Nzema,list,l
+										[Ahanta,l
+										[Jwira-Pepesa,l]]]
+									]
+								]
+							]
+							[Guang,f
+								[South,f
+									[Efutu,list,l
+									[Cherepon,l
+									[Gua,l
+									[Larteh,l]]]]
+								]
+								[North,f
+									[Chumburung,list,l
+									[Tchumbuli,l
+									[Dwang,l
+									[Foodo,l
+									[Kyode,l
+									[Ginyanga,l
+									[Gonga,l
+									[Kplang,l
+									[Krache,l
+									[Nawuri,l
+									[Nchumbulu,l
+									[Nkonya,l
+									[Nkami,l
+									[Ntrapo,u
+									[Vagala,l
+									[Sissala,l]]]]]]]]]]]]]]]]
+								]
+							]
+						]
+					]
+					[Ga-Dangme,f
+						[Ga,list,l
+						[Dangme,l]]
+					]
+					[Ghana-Togo Mountain,f
+						[Na-Togo,f
+							[Lelemi,list,l
+							[Siwu,l
+							[Likpe,l
+							[Santrokfi/Selee,l
+							[Logba,l]]]]]
+						]
+						[Anii-Andere,f
+							[Adele/Gidire,list,l
+							[Basila/Anii,l]]
+						]
+						[Ka-Togo,f
+							[Avatime,list,l
+							[Nyangbo-Tafi,l
+							[Bowili,l
+							[Ahlon/Igo,l
+							[Kposo,l]]]]]
+						]		
+						[Kebu-Animere,f
+							[Animere,list,u
+							[Akebu,l]]
+						]
+						[Agotime,l]
+					]
+					[Lagoon,f
+						[Avikam-Alladian,f
+							[Avikam,list,u
+							[Alladian,u]]
+						]
+						[Attié,list,l
+						[Abé,l
+						[Adjukru,l
+						[Abidji,l]]]]
+					]
+					[Esuma,d]
+				]%end of Kwa
+				[Volta-Niger,f
+					[Akpes,l]
+					[Ayere-Ahan,f
+						[Ayere,list,u
+						[Ahan,u]]
+					]
+					[Gbe,f
+						[Ewe,list,l
+						[Gen,l
+						[Gun,l
+						[Aja,l
+						[Fon,l]]]]]
+						[Phla-Pherá,f
+							[Alada,list,l
+							[Toli,u
+							[Toffi,l
+							[Pherá/Xwela,l
+							[Phla,l
+							[Saxwe,l]]]]]]
+							[Ayizo,f
+								[Ayizo,list,l
+								[Kotafon,u
+								[Gbesi,u]]]
+							]
+						]
+					]%end of Gbe
+					[YEAI,f
+						[Yoruboid,f
+							[Igala,l]
+							[Edekiri,f
+								[Itsekiri,l]
+								[Ede,f
+									[Mokole,l]
+									[Western Ede,f
+										[North Nago,list,u
+										[Kura,u]]
+										[Southwestern Ede,f
+											[Isha-Manigri,list,u
+											[Ana-Ife,l]]
+										]%end of SW Ede
+									]%end of Western Ede
+									[Eastern Ede,f
+										[Ede Shabe,u]
+										[Southeastern Ede,f
+											[Yoruba,l]
+										]
+									]%end of Eastern Ede
+								]%end of Ede
+							]%end of Edekiri
+						]%end of Yoruboid
+						[Edoid,f
+							[North-Central,f
+								[Yekhee,f
+									[Ghoutuo,list,u
+									[Sasaru,l
+									[Igwe,l
+									[Ososo,l
+									[Uneme,l
+									[Afenmai/Yekhee,l]]]]]]
+								]%end of Yekhee
+								[Edo,f
+									[Ivbiosakon,l]
+								]%end of Edo
+								[Ikhin/Arokho,list,u
+								[Esan,l
+								[Bini/Edo,l]]]
+							]%end of NC
+							[North-Western,f]%end of NW %HERE
+						]%end of Edoid
+					]%end of YEAI
+				]%end of Volta-Niger
+			]%end of South Volta
+		]%end of Volta-Congo
+	]%end of Atlantic-Congo
+]%end of Niger-Congo
 \end{forest}
 \end{document}
