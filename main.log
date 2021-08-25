@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.24)  24 AUG 2021 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.8.24)  24 AUG 2021 21:09
 entering extended mode
 **./main.tex
 (main.tex
@@ -10,7 +10,7 @@ Document Class: standalone 2018/03/26 v1.3a Class to compile TeX sub-files stan
 dalone
 (C:\Users\dunca\AppData\Local\Programs\MiKTeX\tex/latex/tools\shellesc.sty
 Package: shellesc 2019/11/08 v1.0c unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 77.
+Package shellesc Info: Unrestricted shell escape enabled on input line 75.
 )
 (C:\Users\dunca\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
@@ -621,26 +621,33 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 969.
+(Font)              <7> on input line 1128.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 969.
- [1
+(Font)              <5> on input line 1128.
 
-{C:/Users/dunca/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-(main.aux) ) 
+! Interruption.
+<to be read again> 
+                   \pgf@pt@y 
+l.1128 \end{forest}
+                   
+? xx
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+H for help, X to quit.
+? x
+ 
 Here is how much of TeX's memory you used:
- 98295 strings out of 478868
- 1982167 string characters out of 2848809
- 2981331 words of memory out of 3000000
- 115926 multiletter control sequences out of 15000+600000
+ 76251 strings out of 478868
+ 1515175 string characters out of 2848809
+ 11370623 words of memory out of 13000000
+ 93886 multiletter control sequences out of 15000+600000
  403735 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 564i,11n,433p,1620b,56179s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/dunca/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmss10.pfb>
-Output written on main.pdf (1 page, 62908 bytes).
+ 545i,11n,421p,1620b,51392s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
 PDF statistics:
- 14 PDF objects out of 1000 (max. 8388607)
+ 3 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
