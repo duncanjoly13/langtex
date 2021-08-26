@@ -7,10 +7,10 @@ I will likely split the LaTeX code into smaller files at some point, maybe by la
 
 I don't have a key on the PDF yet, so here it is:
 
-Red box = `d` = dead, extinct language
+*Red box = `d` = dead, extinct language.*
 
-Blue box = `u` = unsure, couldn't find number of speakers OR had fewer than 50k speakers before 2000
+*Blue box = `u` = unsure, couldn't find number of speakers OR had fewer than 50k speakers before 2000.*
 
-Green box = `l` = living, documented as living after 2000 OR had more than 50k speakers before 2000
+*Green box = `l` = living, documented as living after 2000 OR had more than 50k speakers before 2000.*
 
 Please discuss any questions you have here: https://github.com/duncanjoly13/langtex/discussions
