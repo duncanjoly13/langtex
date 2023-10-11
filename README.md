@@ -1,7 +1,7 @@
 # langtex
 LaTeX project for comprehensive display of inter-lingual relationships
 
-# my computer refuses to run the file anymore and I'm too busy with school to try to fix it (I already spent a few hours looking into the error)
+# this project has been shelved since February 2022
 
 Sources: wikipedia.org (I went through https://en.wikipedia.org/wiki/List_of_language_families#By_number_of_languages and followed each linked-subpage until the end (at the time of writing: Niger-Congo > North Volta > Gur > Bwa > Bwamu))
 
